@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/oneFragment">
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.example.tubitak.OneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_oneFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_oneFragment_to_stackFragment"
+            app:destination="@id/stackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stackFragment"
+        android:name="com.example.tubitak.StackFragment"
+        android:label="fragment_stack"
+        tools:layout="@layout/fragment_stack" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.tubitak.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+</navigation>
