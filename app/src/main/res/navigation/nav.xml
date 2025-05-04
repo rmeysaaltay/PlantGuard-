@@ -20,10 +20,18 @@
         android:id="@+id/stackFragment"
         android:name="com.example.tubitak.StackFragment"
         android:label="fragment_stack"
-        tools:layout="@layout/fragment_stack" />
+        tools:layout="@layout/fragment_stack" >
+        <action
+            android:id="@+id/action_stackFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cameraFragment"
         android:name="com.example.tubitak.CameraFragment"
         android:label="fragment_camera"
-        tools:layout="@layout/fragment_camera" />
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
 </navigation>
